@@ -5,6 +5,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * 编译引用不到HttpServlet，需要将Tomcat安装目录lib下的 servlet-api.jar 拷贝到当前目录
+ * 或者在IDEA中编辑，需要在Libraries中指定依赖的jar包 servlet-api.jar
+ */
 public class MyServlet extends HttpServlet {
 
     @Override
